@@ -7,9 +7,9 @@ UniswapV1_CloneCoding(solidity) With comment
 ## Factory 기능을 이해하기 위한 여정
 3가지 요소가 있다.
 
-- Factory: 서로 다른 Exchange 컨트랙트 주소를 모아둔 것이다. 이름하야 주소록.
+- Factory: 서로 다른 Exchange 컨트랙트 주소를 모아둔 것이다. 이름하야 환전소들의 주소록.
 예를 들어 ETH-Dove, ETH-VID, ETH-XXA 스왑 풀들이 존재할 때 이들은 모두 각자의 Exchange 컨트랙트에 의해 관리될 것이다. 때문에 이들을 하나로 모아주는게 Factory다.
-- **Exchange: Eth-Token 혹은 Token-Token간의 스왑을 정의한다.**
+- **Exchange: Eth-Token 혹은 Token-Token간의 스왑을 정의하고 구현하는 환전소이다.**
 이 과정에서는 가격 측정, 유동성 공급, 스왑, LP토큰 발행, 수수료 처리 등을 다룬다.
 생성 인자로 Token Contract의 주소를 받는다.
 - **Token: 하나의 토큰을 정의한다.**
